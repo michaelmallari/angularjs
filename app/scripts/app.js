@@ -12,6 +12,14 @@ angular.module('angularjslocalApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/upload', {
+        templateUrl: 'views/upload.html',
+        controller: 'UploadCtrl'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
